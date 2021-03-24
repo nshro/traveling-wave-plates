@@ -30,7 +30,7 @@ public class CreateWavingPlates : MonoBehaviour
             GameObject plate = GameObject.Find(id[index]);
             HingeJoint plateHinge = plate.GetComponent<HingeJoint>();
             JointMotor motor = plateHinge.motor;
-            motor.force = 99999999;
+            motor.force = 100;
 
             SizeTimer += Time.deltaTime; // SizeTimerを時間の経過分増加させる
 
